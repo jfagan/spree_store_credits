@@ -13,9 +13,9 @@ Deface::Override.new(
   :disabled => false)
 
 Deface::Override.new(
-  :virtual_path => "spree/checkout/_payment",
-  :name => "store_credits_checkout_payment_step",
-  :insert_after => "[data-hook='checkout_payment_step']",
+  :virtual_path => "spree/orders/edit",
+  :name => "store_credits_orders_edit",
+  :insert_after => "[data-hook='cart_buttons']",
   :partial => "spree/checkout/store_credits",
   :disabled => false)
 
