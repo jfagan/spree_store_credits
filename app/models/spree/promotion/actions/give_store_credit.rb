@@ -1,7 +1,7 @@
 module Spree
   class Promotion::Actions::GiveStoreCredit < PromotionAction
     preference :amount, :decimal, :default => 0.0
-    attr_accessible :preferred_amount
+    #attr_accessible :preferred_amount
 
     def perform(options = {})
       if _user = options[:user]
